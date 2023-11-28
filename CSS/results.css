@@ -11,10 +11,11 @@ body {
 #raw-output{
     padding: 2em;
     display: block;
-    background: #1dab7595;
+    background: #477e6995;
     border-radius: 3em;
     max-width: 400px;
     margin: 3em auto;
+    
   }
 
 #sunrise-container,
