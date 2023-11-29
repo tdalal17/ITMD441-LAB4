@@ -1,6 +1,5 @@
-document.addEventListener('Get the longitude and latitude from the URL info.', () => {
-    console.log('DOM information was loaded');
-
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');
     
     const urlParams = new URLSearchParams(window.location.search);
     const latitude = urlParams.get('lat');
@@ -17,7 +16,7 @@ document.addEventListener('Get the longitude and latitude from the URL info.', (
 async function getSunriseSunset(latitude, longitude) {
     console.log('Getting info on morning and sunset...');
 
-    const url = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`;
+    const url = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`
 
     try {
         const response = await fetch(url);
